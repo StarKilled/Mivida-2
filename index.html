@@ -1640,6 +1640,40 @@ h1 {
   }
 }
 
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: show-button 1s ease-out forwards;
+    animation-delay: 3s; /* Ajusta este tiempo al total de la animación de la flor */
+  }
+
+@keyframes show-button {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.button1 {background-color: #04AA6D;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
 
     </style>
   </head>
@@ -1957,12 +1991,10 @@ h1 {
           <div class="leaf leaf--3"></div>
         </div>
       </div>
-      <div>
-        <button onclick="window.location.href='parte2.html';">
-            Siguente
-        </button>
+      
     </div>
-    </div>
-    
+    <div class="button-container">
+        <button class="button button1" onclick="window.location.href='parte2.html'" >Siguente</button>
+      </div>
   </body>
 </html>
