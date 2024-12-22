@@ -197,3 +197,12 @@ main {
 .visible:hover {
   background-color: #98ff9e;
 }
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  margin: 1rem auto;
+}

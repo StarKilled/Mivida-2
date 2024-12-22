@@ -20,8 +20,19 @@
     <div class="options">
       <button id="open">Abrir</button>
       <button id="close">Cerrar</butto>
-        <button id="extraButton" class="hidden">Haz clic aquí</button>
+        <button id="extraButton" class="hidden"  onclick="window.location.href='final.html'" >Para terminar</button>
     </div>
+
+    <audio id="music" class="hidden">
+      <source src="locura.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button id="extraButton" class="hidden">Haz clic aquí</button>
+    <div id="audioControls" class="hidden">
+      <button onclick="play()">Reproducir</button>
+      <button onclick="pause()">Pausar</button>
+    </div>
+
   </main>
   <script src="script3.js"></script>
 
