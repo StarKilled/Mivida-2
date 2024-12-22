@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flores amarillas para mmi amada</title>
+    <title>Flores amarillas para mmi amada Nirvana</title>
     <style>
       *,
 *::after,
@@ -1640,6 +1640,7 @@ h1 {
   }
 }
 
+/* Botones con diferentes colores */
 .button {
   border: none;
   color: white;
@@ -1650,30 +1651,39 @@ h1 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
 }
 
+.button1 {
+  background-color: #04AA6D; /* Verde */
+}
+
+.button2 {
+  background-color: #008CBA; /* Azul */
+}
+
+/* Contenedor que contiene los botones */
 .button-container {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: show-button 1s ease-out forwards;
+  animation-delay: 4s; /* Ajusta este tiempo al total de la animación de la flor */
+}
+
+/* Animación para mostrar el botón */
+@keyframes show-button {
+  from {
     opacity: 0;
     transform: translateY(20px);
-    animation: show-button 1s ease-out forwards;
-    animation-delay: 3s; /* Ajusta este tiempo al total de la animación de la flor */
   }
-
-@keyframes show-button {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-.button1 {background-color: #04AA6D;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
 
     </style>
   </head>
@@ -1683,6 +1693,8 @@ h1 {
        Nirvana de mi corazon❤️</h1>
   
     <div class="night"></div>
+
+    
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
@@ -1991,10 +2003,12 @@ h1 {
           <div class="leaf leaf--3"></div>
         </div>
       </div>
-      
-    </div>
-    <div class="button-container">
+
+      <div class="button-container">
         <button class="button button1" onclick="window.location.href='carta.html'" >Siguente</button>
       </div>
+      
+    </div>
+    
   </body>
 </html>
