@@ -42,7 +42,7 @@ p {
 } */
 
 body {
-  background-color: #fad7df;
+  background-color: #d7fad7;
 }
 
 main {
@@ -63,7 +63,7 @@ main {
   position: absolute;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 100px solid #fe3334;
+  border-top: 100px solid #33fe34;
   border-bottom: 100px solid transparent;
 
   /*  */
@@ -86,10 +86,10 @@ main {
 }
 
 .letter {
-  border-left: 200px solid #ff989e;
-  border-right: 200px solid #ff989e;
+  border-left: 200px solid #98ff9e;
+  border-right: 200px solid #98ff9e;
   border-top: 100px solid transparent;
-  border-bottom: 100px solid #ff858a;
+  border-bottom: 100px solid #85ff8a;
 }
 
 .options {
@@ -97,17 +97,17 @@ main {
   gap: 5rem;
 
   & button {
-    color: #ff3234;
+    color: #32ff34;
     font-weight: 600;
     border-radius: 3px;
-    background: #fad7df;
+    background: #d7fad7;
     padding: 0.5rem 1rem;
-    border: 1px solid #fe3334;
+    border: 1px solid #33fe34;
     cursor: pointer;
   }
 
   & button:hover {
-    background: #ff989e;
+    background: #98ff9e;
     color: white;
   }
 }
@@ -151,7 +151,7 @@ main {
   margin: auto;
   font-size: 3rem;
 
-  color: #fe3334;
+  color: #33fe34;
 
   animation: crecer 1s forwards ;
 }
@@ -187,7 +187,7 @@ main {
   display: block;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
-  background-color: #fe3334;
+  background-color: #33fe34;
   color: white;
   border: none;
   border-radius: 5px;
@@ -195,14 +195,5 @@ main {
 }
 
 .visible:hover {
-  background-color: #ff989e;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-  margin: 1rem auto;
+  background-color: #98ff9e;
 }
