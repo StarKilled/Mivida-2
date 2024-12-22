@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Retrato de Nirvana</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e5f8ea; /* Fondo de color rosa claro */
+            background-image: url('Scree.png'); /* Ruta de la imagen de osos */
+            background-size: cover;
+            color: #333; /* Color del texto */
+            padding: 5vw; /* Padding relativo */
+            text-align: center;
+            overflow: hidden; /* Para evitar que los elementos aparezcan fuera del área visible */
+            position: relative; /* Para que los elementos absolutamente posicionados se ajusten correctamente */
+        }
+
+        #retrato {
+    max-width: 90vw; /* Máximo ancho relativo */
+    margin: auto;
+    background-color: rgba(203, 243, 224, 0.5); /* Fondo de la carta en tono más claro con transparencia */
+    padding: 5vw; /* Padding relativo */
+    border-radius: 10vw; /* Borde relativo */
+    box-shadow: 0 0 10vw rgba(0, 0, 0, 0.1); /* Sombra relativa */
+    position: relative; /* Para que los elementos absolutamente posicionados se ajusten correctamente */
+    z-index: 1; /* Para que la carta esté sobre las figuras */
+}
+
+
+        h1 {
+            color: #6d27c9; /* Color del título en tono más oscuro */
+        }
+
+        p {
+            margin-bottom: 3vw; /* Margen inferior relativo */
+            line-height: 1.6;
+            color: #6d27c9; /* Color del título en tono más oscuro */
+        }
+
+        img {
+            max-width: 100%; /* Imagen adaptable */
+            height: auto;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <div id="retrato">
+        <h1>>Nirvana Camacho<</h1>
+        <img src="Retrato2.jpeg" alt="Retrato de Nirvana">
+        <p>Los ojitos más bellos ^.^</p>
+    </div>
+
+    <!-- Audio que se reproduce automáticamente -->
+    
+
+    <audio controls id="music">
+
+        <source src="OjosChinos3.mp3" type="audio/mpeg">
+        
+        Your browser does not support the audio element.
+        
+        </audio>
+        
+         
+        
+        
+         
+        
+        <button onclick="play()" type="button">Play </button>
+        
+        <button onclick="pause()" type="button">Pausa</button>
+        
+         
+        
+        <script>
+        
+        var myMusic= document.getElementById("music");
+        
+        function play() {
+        
+        myMusic.play();
+        
+        }
+        
+         
+        
+        function pause() {
+        
+        myMusic.pause();
+        
+        }
+        
+        </script>
 </body>
 </html>
